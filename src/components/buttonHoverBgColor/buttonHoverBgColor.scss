@@ -1,0 +1,27 @@
+.bg-color-change{
+	display: inline-block;
+	color: #fff;
+	border: 4px solid #e9204f;
+	padding: 20px 40px;
+	background-color: transparent;
+	font-size: 1.5rem;
+	font-weight: 600;
+	position: relative;
+	z-index: 1;
+}
+.bg-color-change::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: #e9204f;
+        z-index: -1;
+		transition: .5s;
+	}
+	.bg-color-change:hover::after{
+		width: 100%;
+	}
+
+

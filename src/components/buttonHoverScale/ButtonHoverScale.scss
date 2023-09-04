@@ -1,0 +1,44 @@
+
+.btn-hover-scale{
+	width: 30rem;
+	height: 9rem;
+	font-size: 2.5rem;
+	font-weight: 700;
+	background-color: #191919;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    overflow: hidden;
+	transition: .5s;
+	border: none;
+	.different-icon{
+		margin-left: -1rem;
+		transition: 0.5s;
+		opacity:0;
+	}
+	.btn-name{
+		transition: 0.5s;
+		margin-left: -12rem;
+	}
+	.right-icon{
+		display: inline-block;
+		margin-right: 3rem;
+		transition: 0.5s;
+	}
+	&:hover {
+		background-color: #e9204f;
+		.different-icon{
+        transform: scale(2);
+		opacity: 1;
+		}
+		.btn-name{
+			transform: translateX(50px);
+		}
+		.right-icon{
+		 transform: translateX(20px);
+		}
+		}
+}
+
+// }
